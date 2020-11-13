@@ -46,12 +46,12 @@ if [[ x${NEEDAUTH^^} == x"Y" ]]; then
 fi
 
 systemctl stop cloud-torrent || true
-wget -qO- https://api.github.com/repos/boypt/simple-torrent/releases/latest \
+wget -qO- https://api.github.com/repos/BlackJocker1995/simple-torrent/releases/latest \
 | grep browser_download_url | grep "$BINTAG" | cut -d '"' -f 4 \
 | wget --no-verbose -i- -O- | gzip -d -c > ${CLDBIN}
 chmod 0755 ${CLDBIN}
 
-wget -O /etc/systemd/system/cloud-torrent.service https://raw.githubusercontent.com/boypt/simple-torrent/master/scripts/cloud-torrent.service
+wget -O /etc/systemd/system/cloud-torrent.service https://raw.githubusercontent.com/BlackJocker1995/simple-torrent/master/scripts/cloud-torrent.service
 
 if [[ x${NEEDAUTH^^} == x"Y" ]]; then
     sed -i "s/user:ctorrent/${USERNAME}:${PASSWORD}/" /etc/systemd/system/cloud-torrent.service 
