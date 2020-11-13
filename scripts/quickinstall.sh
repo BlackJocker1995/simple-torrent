@@ -51,7 +51,7 @@ wget -qO- https://api.github.com/repos/boypt/simple-torrent/releases/latest \
 | wget --no-verbose -i- -O- | gzip -d -c > ${CLDBIN}
 chmod 0755 ${CLDBIN}
 
-wget -O /etc/systemd/system/cloud-torrent.service https://raw.githubusercontent.com/BlackJocker1995/simple-torrent/master/scripts/cloud-torrent.service
+wget -O /etc/systemd/system/cloud-torrent.service https://raw.githubusercontent.com/BlackJocker1995/simple-torrent/master/blob/scripts/cloud-torrent.service
 
 if [[ x${NEEDAUTH^^} == x"Y" ]]; then
     sed -i "s/user:ctorrent/${USERNAME}:${PASSWORD}/" /etc/systemd/system/cloud-torrent.service 
