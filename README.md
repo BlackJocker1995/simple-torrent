@@ -34,17 +34,17 @@ Also:
 
 ## Binary
 
-See [the latest release](https://github.com/boypt/cloud-torrent/releases/latest) or use the oneline script to do a quick install on modern Linux.
+See [the latest release](https://github.com/BlackJocker1995/cloud-torrent/releases/latest) or use the oneline script to do a quick install on modern Linux.
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/boypt/simple-torrent/master/scripts/quickinstall.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/BlackJocker1995/simple-torrent/master/scripts/quickinstall.sh)
 ```
 
-The script install a systemd unit (under `scripts/cloud-torrent.service`) as service. Read further intructions: [Auth And Security](https://github.com/boypt/simple-torrent/wiki/AuthSecurity)
+The script install a systemd unit (under `scripts/cloud-torrent.service`) as service. Read further intructions: [Auth And Security](https://github.com/BlackJocker1995/simple-torrent/wiki/AuthSecurity)
 
-## Docker [![Docker Pulls](https://img.shields.io/docker/pulls/boypt/cloud-torrent.svg)][dockerhub] [![Image Size](https://images.microbadger.com/badges/image/boypt/cloud-torrent.svg)][dockerhub]
+## Docker [![Docker Pulls](https://img.shields.io/docker/pulls/boypt/cloud-torrent.svg)][dockerhub] [![Image Size](https://images.microbadger.com/badges/image/BlackJocker1995/cloud-torrent.svg)][dockerhub]
 
-[dockerhub]: https://hub.docker.com/r/boypt/cloud-torrent/
+[dockerhub]: https://hub.docker.com/r/BlackJocker1995/cloud-torrent/
 
 ``` sh
 $ docker run -d -p 3000:3000 -v /path/to/my/downloads:/downloads -v /path/to/my/torrents:/torrents boypt/cloud-torrent
@@ -64,13 +64,13 @@ $ ./scripts/make_release.sh
 # Usage
 
 ## Commandline Options
-See Wiki [Command line Options](https://github.com/boypt/simple-torrent/wiki/Command-line-Options)
+See Wiki [Command line Options](https://github.com/BlackJocker1995/simple-torrent/wiki/Command-line-Options)
 
 ## Configuration file
-See Wiki [Config File](https://github.com/boypt/simple-torrent/wiki/Config-File)
+See Wiki [Config File](https://github.com/boypt/simple-torrent/BlackJocker1995/Config-File)
 
 ## Use with WEB servers (nginx/caddy)
-See Wiki [Behind WebServer (reverse proxying)](https://github.com/boypt/simple-torrent/wiki/ReverseProxy)
+See Wiki [Behind WebServer (reverse proxying)](https://github.com/BlackJocker1995/simple-torrent/wiki/ReverseProxy)
 
 # Credits 
 * Credits to @jpillora for [Cloud Torrent](https://github.com/jpillora/cloud-torrent).
